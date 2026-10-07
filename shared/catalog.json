@@ -1,0 +1,3638 @@
+[
+  {
+    "id": "asm-01-01",
+    "sku": "ASM-0101",
+    "name": "Navy Essential Cotton Tee",
+    "brand": "ATELIER",
+    "description": "Essential Cotton Tee with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "T-shirts",
+    "gender": "Unisex",
+    "price": 899,
+    "discount": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Navy",
+        "hex": "#283b57"
+      },
+      {
+        "name": "Olive",
+        "hex": "#718267"
+      },
+      {
+        "name": "Maroon",
+        "hex": "#843d54"
+      }
+    ],
+    "stock": 8,
+    "image": "/garments/t-shirts.svg",
+    "garmentImage": "/garments/t-shirts.svg",
+    "frontImage": "/garments/t-shirts.svg",
+    "backImage": "/garments/t-shirts.svg",
+    "mask": "/garments/t-shirts.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "A11",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel"
+    ],
+    "silhouette": "top",
+    "featured": true
+  },
+  {
+    "id": "asm-01-02",
+    "sku": "ASM-0102",
+    "name": "White Relaxed Studio Tee",
+    "brand": "FORM STUDIO",
+    "description": "Relaxed Studio Tee with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "T-shirts",
+    "gender": "Unisex",
+    "price": 1099,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#f3efe5"
+      },
+      {
+        "name": "Beige",
+        "hex": "#c9b89e"
+      },
+      {
+        "name": "Rose",
+        "hex": "#c87b8b"
+      }
+    ],
+    "stock": 9,
+    "image": "/garments/t-shirts.svg",
+    "garmentImage": "/garments/t-shirts.svg",
+    "frontImage": "/garments/t-shirts.svg",
+    "backImage": "/garments/t-shirts.svg",
+    "mask": "/garments/t-shirts.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "A12",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-01-03",
+    "sku": "ASM-0103",
+    "name": "Black Weekend Ribbed Tee",
+    "brand": "URBAN THREAD",
+    "description": "Weekend Ribbed Tee with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "T-shirts",
+    "gender": "Unisex",
+    "price": 1299,
+    "discount": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#22232b"
+      },
+      {
+        "name": "Charcoal",
+        "hex": "#535660"
+      },
+      {
+        "name": "Teal",
+        "hex": "#377f82"
+      }
+    ],
+    "stock": 10,
+    "image": "/garments/t-shirts.svg",
+    "garmentImage": "/garments/t-shirts.svg",
+    "frontImage": "/garments/t-shirts.svg",
+    "backImage": "/garments/t-shirts.svg",
+    "mask": "/garments/t-shirts.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "A13",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-01-04",
+    "sku": "ASM-0104",
+    "name": "Olive Everyday Oversized Tee",
+    "brand": "NOVA COLLECTIVE",
+    "description": "Everyday Oversized Tee with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "T-shirts",
+    "gender": "Unisex",
+    "price": 1499,
+    "discount": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Olive",
+        "hex": "#718267"
+      },
+      {
+        "name": "Maroon",
+        "hex": "#843d54"
+      },
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      }
+    ],
+    "stock": 11,
+    "image": "/garments/t-shirts.svg",
+    "garmentImage": "/garments/t-shirts.svg",
+    "frontImage": "/garments/t-shirts.svg",
+    "backImage": "/garments/t-shirts.svg",
+    "mask": "/garments/t-shirts.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "A14",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-02-01",
+    "sku": "ASM-0201",
+    "name": "White Midnight Oversized Shirt",
+    "brand": "ATELIER",
+    "description": "Midnight Oversized Shirt with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Shirts",
+    "gender": "Men",
+    "price": 1799,
+    "discount": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#f3efe5"
+      },
+      {
+        "name": "Beige",
+        "hex": "#c9b89e"
+      },
+      {
+        "name": "Rose",
+        "hex": "#c87b8b"
+      }
+    ],
+    "stock": 9,
+    "image": "/garments/shirts.svg",
+    "garmentImage": "/garments/shirts.svg",
+    "frontImage": "/garments/shirts.svg",
+    "backImage": "/garments/shirts.svg",
+    "mask": "/garments/shirts.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "B11",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Date",
+      "Casual"
+    ],
+    "silhouette": "top",
+    "featured": true
+  },
+  {
+    "id": "asm-02-02",
+    "sku": "ASM-0202",
+    "name": "Black Oxford Button Shirt",
+    "brand": "FORM STUDIO",
+    "description": "Oxford Button Shirt with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Shirts",
+    "gender": "Men",
+    "price": 1999,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#22232b"
+      },
+      {
+        "name": "Charcoal",
+        "hex": "#535660"
+      },
+      {
+        "name": "Teal",
+        "hex": "#377f82"
+      }
+    ],
+    "stock": 10,
+    "image": "/garments/shirts.svg",
+    "garmentImage": "/garments/shirts.svg",
+    "frontImage": "/garments/shirts.svg",
+    "backImage": "/garments/shirts.svg",
+    "mask": "/garments/shirts.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "B12",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Date",
+      "Casual"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-02-03",
+    "sku": "ASM-0203",
+    "name": "Olive Linen Resort Shirt",
+    "brand": "URBAN THREAD",
+    "description": "Linen Resort Shirt with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Shirts",
+    "gender": "Men",
+    "price": 2199,
+    "discount": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Olive",
+        "hex": "#718267"
+      },
+      {
+        "name": "Maroon",
+        "hex": "#843d54"
+      },
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      }
+    ],
+    "stock": 11,
+    "image": "/garments/shirts.svg",
+    "garmentImage": "/garments/shirts.svg",
+    "frontImage": "/garments/shirts.svg",
+    "backImage": "/garments/shirts.svg",
+    "mask": "/garments/shirts.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "B13",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Date",
+      "Casual"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-02-04",
+    "sku": "ASM-0204",
+    "name": "Beige Clean Poplin Shirt",
+    "brand": "NOVA COLLECTIVE",
+    "description": "Clean Poplin Shirt with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Shirts",
+    "gender": "Men",
+    "price": 2399,
+    "discount": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Beige",
+        "hex": "#c9b89e"
+      },
+      {
+        "name": "Rose",
+        "hex": "#c87b8b"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      }
+    ],
+    "stock": 12,
+    "image": "/garments/shirts.svg",
+    "garmentImage": "/garments/shirts.svg",
+    "frontImage": "/garments/shirts.svg",
+    "backImage": "/garments/shirts.svg",
+    "mask": "/garments/shirts.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "B14",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Date",
+      "Casual"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-03-01",
+    "sku": "ASM-0301",
+    "name": "Black Cloud Fleece Hoodie",
+    "brand": "ATELIER",
+    "description": "Cloud Fleece Hoodie with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Hoodies",
+    "gender": "Unisex",
+    "price": 2199,
+    "discount": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#22232b"
+      },
+      {
+        "name": "Charcoal",
+        "hex": "#535660"
+      },
+      {
+        "name": "Teal",
+        "hex": "#377f82"
+      }
+    ],
+    "stock": 10,
+    "image": "/garments/hoodies.svg",
+    "garmentImage": "/garments/hoodies.svg",
+    "frontImage": "/garments/hoodies.svg",
+    "backImage": "/garments/hoodies.svg",
+    "mask": "/garments/hoodies.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "C11",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel"
+    ],
+    "silhouette": "top",
+    "featured": true
+  },
+  {
+    "id": "asm-03-02",
+    "sku": "ASM-0302",
+    "name": "Olive Studio Zip Hoodie",
+    "brand": "FORM STUDIO",
+    "description": "Studio Zip Hoodie with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Hoodies",
+    "gender": "Unisex",
+    "price": 2399,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Olive",
+        "hex": "#718267"
+      },
+      {
+        "name": "Maroon",
+        "hex": "#843d54"
+      },
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      }
+    ],
+    "stock": 11,
+    "image": "/garments/hoodies.svg",
+    "garmentImage": "/garments/hoodies.svg",
+    "frontImage": "/garments/hoodies.svg",
+    "backImage": "/garments/hoodies.svg",
+    "mask": "/garments/hoodies.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "C12",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-03-03",
+    "sku": "ASM-0303",
+    "name": "Beige City Loopback Hoodie",
+    "brand": "URBAN THREAD",
+    "description": "City Loopback Hoodie with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Hoodies",
+    "gender": "Unisex",
+    "price": 2599,
+    "discount": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Beige",
+        "hex": "#c9b89e"
+      },
+      {
+        "name": "Rose",
+        "hex": "#c87b8b"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      }
+    ],
+    "stock": 12,
+    "image": "/garments/hoodies.svg",
+    "garmentImage": "/garments/hoodies.svg",
+    "frontImage": "/garments/hoodies.svg",
+    "backImage": "/garments/hoodies.svg",
+    "mask": "/garments/hoodies.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "C13",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-03-04",
+    "sku": "ASM-0304",
+    "name": "Charcoal Weekend Oversized Hoodie",
+    "brand": "NOVA COLLECTIVE",
+    "description": "Weekend Oversized Hoodie with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Hoodies",
+    "gender": "Unisex",
+    "price": 2799,
+    "discount": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Charcoal",
+        "hex": "#535660"
+      },
+      {
+        "name": "Teal",
+        "hex": "#377f82"
+      },
+      {
+        "name": "Sand",
+        "hex": "#d4c1a1"
+      }
+    ],
+    "stock": 13,
+    "image": "/garments/hoodies.svg",
+    "garmentImage": "/garments/hoodies.svg",
+    "frontImage": "/garments/hoodies.svg",
+    "backImage": "/garments/hoodies.svg",
+    "mask": "/garments/hoodies.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "C14",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-04-01",
+    "sku": "ASM-0401",
+    "name": "Olive Urban Utility Jacket",
+    "brand": "ATELIER",
+    "description": "Urban Utility Jacket with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Jackets",
+    "gender": "Unisex",
+    "price": 3499,
+    "discount": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Olive",
+        "hex": "#718267"
+      },
+      {
+        "name": "Maroon",
+        "hex": "#843d54"
+      },
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      }
+    ],
+    "stock": 11,
+    "image": "/garments/jackets.svg",
+    "garmentImage": "/garments/jackets.svg",
+    "frontImage": "/garments/jackets.svg",
+    "backImage": "/garments/jackets.svg",
+    "mask": "/garments/jackets.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "D11",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "Travel",
+      "Date",
+      "Party"
+    ],
+    "silhouette": "top",
+    "featured": true
+  },
+  {
+    "id": "asm-04-02",
+    "sku": "ASM-0402",
+    "name": "Beige Heritage Denim Jacket",
+    "brand": "FORM STUDIO",
+    "description": "Heritage Denim Jacket with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Jackets",
+    "gender": "Unisex",
+    "price": 3699,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Beige",
+        "hex": "#c9b89e"
+      },
+      {
+        "name": "Rose",
+        "hex": "#c87b8b"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      }
+    ],
+    "stock": 12,
+    "image": "/garments/jackets.svg",
+    "garmentImage": "/garments/jackets.svg",
+    "frontImage": "/garments/jackets.svg",
+    "backImage": "/garments/jackets.svg",
+    "mask": "/garments/jackets.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "D12",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "Travel",
+      "Date",
+      "Party"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-04-03",
+    "sku": "ASM-0403",
+    "name": "Charcoal Soft Bomber Jacket",
+    "brand": "URBAN THREAD",
+    "description": "Soft Bomber Jacket with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Jackets",
+    "gender": "Unisex",
+    "price": 3899,
+    "discount": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Charcoal",
+        "hex": "#535660"
+      },
+      {
+        "name": "Teal",
+        "hex": "#377f82"
+      },
+      {
+        "name": "Sand",
+        "hex": "#d4c1a1"
+      }
+    ],
+    "stock": 13,
+    "image": "/garments/jackets.svg",
+    "garmentImage": "/garments/jackets.svg",
+    "frontImage": "/garments/jackets.svg",
+    "backImage": "/garments/jackets.svg",
+    "mask": "/garments/jackets.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "D13",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "Travel",
+      "Date",
+      "Party"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-04-04",
+    "sku": "ASM-0404",
+    "name": "Maroon Lightweight Field Jacket",
+    "brand": "NOVA COLLECTIVE",
+    "description": "Lightweight Field Jacket with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Jackets",
+    "gender": "Unisex",
+    "price": 4099,
+    "discount": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Maroon",
+        "hex": "#843d54"
+      },
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      },
+      {
+        "name": "Navy",
+        "hex": "#283b57"
+      }
+    ],
+    "stock": 14,
+    "image": "/garments/jackets.svg",
+    "garmentImage": "/garments/jackets.svg",
+    "frontImage": "/garments/jackets.svg",
+    "backImage": "/garments/jackets.svg",
+    "mask": "/garments/jackets.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "D14",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "Travel",
+      "Date",
+      "Party"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-05-01",
+    "sku": "ASM-0501",
+    "name": "Beige Modern Tailored Blazer",
+    "brand": "ATELIER",
+    "description": "Modern Tailored Blazer with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Blazers",
+    "gender": "Men",
+    "price": 4999,
+    "discount": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Beige",
+        "hex": "#c9b89e"
+      },
+      {
+        "name": "Rose",
+        "hex": "#c87b8b"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      }
+    ],
+    "stock": 12,
+    "image": "/garments/blazers.svg",
+    "garmentImage": "/garments/blazers.svg",
+    "frontImage": "/garments/blazers.svg",
+    "backImage": "/garments/blazers.svg",
+    "mask": "/garments/blazers.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "E11",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Wedding",
+      "Formal event"
+    ],
+    "silhouette": "top",
+    "featured": true
+  },
+  {
+    "id": "asm-05-02",
+    "sku": "ASM-0502",
+    "name": "Charcoal Essential Office Blazer",
+    "brand": "FORM STUDIO",
+    "description": "Essential Office Blazer with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Blazers",
+    "gender": "Men",
+    "price": 5199,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Charcoal",
+        "hex": "#535660"
+      },
+      {
+        "name": "Teal",
+        "hex": "#377f82"
+      },
+      {
+        "name": "Sand",
+        "hex": "#d4c1a1"
+      }
+    ],
+    "stock": 13,
+    "image": "/garments/blazers.svg",
+    "garmentImage": "/garments/blazers.svg",
+    "frontImage": "/garments/blazers.svg",
+    "backImage": "/garments/blazers.svg",
+    "mask": "/garments/blazers.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "E12",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Wedding",
+      "Formal event"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-05-03",
+    "sku": "ASM-0503",
+    "name": "Maroon Textured Evening Blazer",
+    "brand": "URBAN THREAD",
+    "description": "Textured Evening Blazer with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Blazers",
+    "gender": "Men",
+    "price": 5399,
+    "discount": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Maroon",
+        "hex": "#843d54"
+      },
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      },
+      {
+        "name": "Navy",
+        "hex": "#283b57"
+      }
+    ],
+    "stock": 14,
+    "image": "/garments/blazers.svg",
+    "garmentImage": "/garments/blazers.svg",
+    "frontImage": "/garments/blazers.svg",
+    "backImage": "/garments/blazers.svg",
+    "mask": "/garments/blazers.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "E13",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Wedding",
+      "Formal event"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-05-04",
+    "sku": "ASM-0504",
+    "name": "Rose Relaxed Linen Blazer",
+    "brand": "NOVA COLLECTIVE",
+    "description": "Relaxed Linen Blazer with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Blazers",
+    "gender": "Men",
+    "price": 5599,
+    "discount": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Rose",
+        "hex": "#c87b8b"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      },
+      {
+        "name": "White",
+        "hex": "#f3efe5"
+      }
+    ],
+    "stock": 15,
+    "image": "/garments/blazers.svg",
+    "garmentImage": "/garments/blazers.svg",
+    "frontImage": "/garments/blazers.svg",
+    "backImage": "/garments/blazers.svg",
+    "mask": "/garments/blazers.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "E14",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Wedding",
+      "Formal event"
+    ],
+    "silhouette": "top",
+    "featured": false
+  },
+  {
+    "id": "asm-06-01",
+    "sku": "ASM-0601",
+    "name": "Charcoal Flowing Midi Dress",
+    "brand": "ATELIER",
+    "description": "Flowing Midi Dress with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Dresses",
+    "gender": "Women",
+    "price": 3299,
+    "discount": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Charcoal",
+        "hex": "#535660"
+      },
+      {
+        "name": "Teal",
+        "hex": "#377f82"
+      },
+      {
+        "name": "Sand",
+        "hex": "#d4c1a1"
+      }
+    ],
+    "stock": 13,
+    "image": "/garments/dresses.svg",
+    "garmentImage": "/garments/dresses.svg",
+    "frontImage": "/garments/dresses.svg",
+    "backImage": "/garments/dresses.svg",
+    "mask": "/garments/dresses.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "F11",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Date",
+      "Party",
+      "Wedding",
+      "Formal event"
+    ],
+    "silhouette": "dress",
+    "featured": true
+  },
+  {
+    "id": "asm-06-02",
+    "sku": "ASM-0602",
+    "name": "Maroon Satin Evening Dress",
+    "brand": "FORM STUDIO",
+    "description": "Satin Evening Dress with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Dresses",
+    "gender": "Women",
+    "price": 3499,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Maroon",
+        "hex": "#843d54"
+      },
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      },
+      {
+        "name": "Navy",
+        "hex": "#283b57"
+      }
+    ],
+    "stock": 14,
+    "image": "/garments/dresses.svg",
+    "garmentImage": "/garments/dresses.svg",
+    "frontImage": "/garments/dresses.svg",
+    "backImage": "/garments/dresses.svg",
+    "mask": "/garments/dresses.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "F12",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Date",
+      "Party",
+      "Wedding",
+      "Formal event"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  },
+  {
+    "id": "asm-06-03",
+    "sku": "ASM-0603",
+    "name": "Rose Garden Wrap Dress",
+    "brand": "URBAN THREAD",
+    "description": "Garden Wrap Dress with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Dresses",
+    "gender": "Women",
+    "price": 3699,
+    "discount": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Rose",
+        "hex": "#c87b8b"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      },
+      {
+        "name": "White",
+        "hex": "#f3efe5"
+      }
+    ],
+    "stock": 15,
+    "image": "/garments/dresses.svg",
+    "garmentImage": "/garments/dresses.svg",
+    "frontImage": "/garments/dresses.svg",
+    "backImage": "/garments/dresses.svg",
+    "mask": "/garments/dresses.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "F13",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Date",
+      "Party",
+      "Wedding",
+      "Formal event"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  },
+  {
+    "id": "asm-06-04",
+    "sku": "ASM-0604",
+    "name": "Teal Minimal Column Dress",
+    "brand": "NOVA COLLECTIVE",
+    "description": "Minimal Column Dress with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Dresses",
+    "gender": "Women",
+    "price": 3899,
+    "discount": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Teal",
+        "hex": "#377f82"
+      },
+      {
+        "name": "Sand",
+        "hex": "#d4c1a1"
+      },
+      {
+        "name": "Black",
+        "hex": "#22232b"
+      }
+    ],
+    "stock": 16,
+    "image": "/garments/dresses.svg",
+    "garmentImage": "/garments/dresses.svg",
+    "frontImage": "/garments/dresses.svg",
+    "backImage": "/garments/dresses.svg",
+    "mask": "/garments/dresses.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "F14",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Date",
+      "Party",
+      "Wedding",
+      "Formal event"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  },
+  {
+    "id": "asm-07-01",
+    "sku": "ASM-0701",
+    "name": "Maroon Everyday Straight Kurti",
+    "brand": "ATELIER",
+    "description": "Everyday Straight Kurti with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Kurtis",
+    "gender": "Women",
+    "price": 1899,
+    "discount": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Maroon",
+        "hex": "#843d54"
+      },
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      },
+      {
+        "name": "Navy",
+        "hex": "#283b57"
+      }
+    ],
+    "stock": 14,
+    "image": "/garments/kurtis.svg",
+    "garmentImage": "/garments/kurtis.svg",
+    "frontImage": "/garments/kurtis.svg",
+    "backImage": "/garments/kurtis.svg",
+    "mask": "/garments/kurtis.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "G11",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Festival",
+      "Casual",
+      "College"
+    ],
+    "silhouette": "dress",
+    "featured": true
+  },
+  {
+    "id": "asm-07-02",
+    "sku": "ASM-0702",
+    "name": "Rose Embroidered Cotton Kurti",
+    "brand": "FORM STUDIO",
+    "description": "Embroidered Cotton Kurti with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Kurtis",
+    "gender": "Women",
+    "price": 2099,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Rose",
+        "hex": "#c87b8b"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      },
+      {
+        "name": "White",
+        "hex": "#f3efe5"
+      }
+    ],
+    "stock": 15,
+    "image": "/garments/kurtis.svg",
+    "garmentImage": "/garments/kurtis.svg",
+    "frontImage": "/garments/kurtis.svg",
+    "backImage": "/garments/kurtis.svg",
+    "mask": "/garments/kurtis.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "G12",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Festival",
+      "Casual",
+      "College"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  },
+  {
+    "id": "asm-07-03",
+    "sku": "ASM-0703",
+    "name": "Teal Heritage A-Line Kurti",
+    "brand": "URBAN THREAD",
+    "description": "Heritage A-Line Kurti with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Kurtis",
+    "gender": "Women",
+    "price": 2299,
+    "discount": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Teal",
+        "hex": "#377f82"
+      },
+      {
+        "name": "Sand",
+        "hex": "#d4c1a1"
+      },
+      {
+        "name": "Black",
+        "hex": "#22232b"
+      }
+    ],
+    "stock": 16,
+    "image": "/garments/kurtis.svg",
+    "garmentImage": "/garments/kurtis.svg",
+    "frontImage": "/garments/kurtis.svg",
+    "backImage": "/garments/kurtis.svg",
+    "mask": "/garments/kurtis.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "G13",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Festival",
+      "Casual",
+      "College"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  },
+  {
+    "id": "asm-07-04",
+    "sku": "ASM-0704",
+    "name": "Emerald Printed Weekend Kurti",
+    "brand": "NOVA COLLECTIVE",
+    "description": "Printed Weekend Kurti with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Kurtis",
+    "gender": "Women",
+    "price": 2499,
+    "discount": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      },
+      {
+        "name": "Navy",
+        "hex": "#283b57"
+      },
+      {
+        "name": "Olive",
+        "hex": "#718267"
+      }
+    ],
+    "stock": 17,
+    "image": "/garments/kurtis.svg",
+    "garmentImage": "/garments/kurtis.svg",
+    "frontImage": "/garments/kurtis.svg",
+    "backImage": "/garments/kurtis.svg",
+    "mask": "/garments/kurtis.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "G14",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Festival",
+      "Casual",
+      "College"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  },
+  {
+    "id": "asm-08-01",
+    "sku": "ASM-0801",
+    "name": "Rose Classic Straight Jeans",
+    "brand": "ATELIER",
+    "description": "Classic Straight Jeans with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Jeans",
+    "gender": "Unisex",
+    "price": 2499,
+    "discount": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Rose",
+        "hex": "#c87b8b"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      },
+      {
+        "name": "White",
+        "hex": "#f3efe5"
+      }
+    ],
+    "stock": 15,
+    "image": "/garments/jeans.svg",
+    "garmentImage": "/garments/jeans.svg",
+    "frontImage": "/garments/jeans.svg",
+    "backImage": "/garments/jeans.svg",
+    "mask": "/garments/jeans.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 96,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 98,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 100,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 102,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 104,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 106,
+        "shoulder": 46
+      }
+    },
+    "rack": "H11",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel",
+      "Date"
+    ],
+    "silhouette": "bottom",
+    "featured": true
+  },
+  {
+    "id": "asm-08-02",
+    "sku": "ASM-0802",
+    "name": "Teal Relaxed Wide Leg Jeans",
+    "brand": "FORM STUDIO",
+    "description": "Relaxed Wide Leg Jeans with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Jeans",
+    "gender": "Unisex",
+    "price": 2699,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Teal",
+        "hex": "#377f82"
+      },
+      {
+        "name": "Sand",
+        "hex": "#d4c1a1"
+      },
+      {
+        "name": "Black",
+        "hex": "#22232b"
+      }
+    ],
+    "stock": 16,
+    "image": "/garments/jeans.svg",
+    "garmentImage": "/garments/jeans.svg",
+    "frontImage": "/garments/jeans.svg",
+    "backImage": "/garments/jeans.svg",
+    "mask": "/garments/jeans.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 96,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 98,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 100,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 102,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 104,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 106,
+        "shoulder": 46
+      }
+    },
+    "rack": "H12",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel",
+      "Date"
+    ],
+    "silhouette": "bottom",
+    "featured": false
+  },
+  {
+    "id": "asm-08-03",
+    "sku": "ASM-0803",
+    "name": "Emerald Slim Stretch Jeans",
+    "brand": "URBAN THREAD",
+    "description": "Slim Stretch Jeans with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Jeans",
+    "gender": "Unisex",
+    "price": 2899,
+    "discount": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      },
+      {
+        "name": "Navy",
+        "hex": "#283b57"
+      },
+      {
+        "name": "Olive",
+        "hex": "#718267"
+      }
+    ],
+    "stock": 17,
+    "image": "/garments/jeans.svg",
+    "garmentImage": "/garments/jeans.svg",
+    "frontImage": "/garments/jeans.svg",
+    "backImage": "/garments/jeans.svg",
+    "mask": "/garments/jeans.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 96,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 98,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 100,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 102,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 104,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 106,
+        "shoulder": 46
+      }
+    },
+    "rack": "H13",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel",
+      "Date"
+    ],
+    "silhouette": "bottom",
+    "featured": false
+  },
+  {
+    "id": "asm-08-04",
+    "sku": "ASM-0804",
+    "name": "Indigo Vintage Tapered Jeans",
+    "brand": "NOVA COLLECTIVE",
+    "description": "Vintage Tapered Jeans with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Jeans",
+    "gender": "Unisex",
+    "price": 3099,
+    "discount": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      },
+      {
+        "name": "White",
+        "hex": "#f3efe5"
+      },
+      {
+        "name": "Beige",
+        "hex": "#c9b89e"
+      }
+    ],
+    "stock": 18,
+    "image": "/garments/jeans.svg",
+    "garmentImage": "/garments/jeans.svg",
+    "frontImage": "/garments/jeans.svg",
+    "backImage": "/garments/jeans.svg",
+    "mask": "/garments/jeans.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 96,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 98,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 100,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 102,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 104,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 106,
+        "shoulder": 46
+      }
+    },
+    "rack": "H14",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel",
+      "Date"
+    ],
+    "silhouette": "bottom",
+    "featured": false
+  },
+  {
+    "id": "asm-09-01",
+    "sku": "ASM-0901",
+    "name": "Teal Tailored Pleated Trousers",
+    "brand": "ATELIER",
+    "description": "Tailored Pleated Trousers with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Trousers",
+    "gender": "Unisex",
+    "price": 2799,
+    "discount": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Teal",
+        "hex": "#377f82"
+      },
+      {
+        "name": "Sand",
+        "hex": "#d4c1a1"
+      },
+      {
+        "name": "Black",
+        "hex": "#22232b"
+      }
+    ],
+    "stock": 16,
+    "image": "/garments/trousers.svg",
+    "garmentImage": "/garments/trousers.svg",
+    "frontImage": "/garments/trousers.svg",
+    "backImage": "/garments/trousers.svg",
+    "mask": "/garments/trousers.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 96,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 98,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 100,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 102,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 104,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 106,
+        "shoulder": 46
+      }
+    },
+    "rack": "I11",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Formal event",
+      "Travel"
+    ],
+    "silhouette": "bottom",
+    "featured": true
+  },
+  {
+    "id": "asm-09-02",
+    "sku": "ASM-0902",
+    "name": "Emerald Essential Chino Trousers",
+    "brand": "FORM STUDIO",
+    "description": "Essential Chino Trousers with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Trousers",
+    "gender": "Unisex",
+    "price": 2999,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      },
+      {
+        "name": "Navy",
+        "hex": "#283b57"
+      },
+      {
+        "name": "Olive",
+        "hex": "#718267"
+      }
+    ],
+    "stock": 17,
+    "image": "/garments/trousers.svg",
+    "garmentImage": "/garments/trousers.svg",
+    "frontImage": "/garments/trousers.svg",
+    "backImage": "/garments/trousers.svg",
+    "mask": "/garments/trousers.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 96,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 98,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 100,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 102,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 104,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 106,
+        "shoulder": 46
+      }
+    },
+    "rack": "I12",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Formal event",
+      "Travel"
+    ],
+    "silhouette": "bottom",
+    "featured": false
+  },
+  {
+    "id": "asm-09-03",
+    "sku": "ASM-0903",
+    "name": "Indigo Relaxed Linen Trousers",
+    "brand": "URBAN THREAD",
+    "description": "Relaxed Linen Trousers with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Trousers",
+    "gender": "Unisex",
+    "price": 3199,
+    "discount": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      },
+      {
+        "name": "White",
+        "hex": "#f3efe5"
+      },
+      {
+        "name": "Beige",
+        "hex": "#c9b89e"
+      }
+    ],
+    "stock": 18,
+    "image": "/garments/trousers.svg",
+    "garmentImage": "/garments/trousers.svg",
+    "frontImage": "/garments/trousers.svg",
+    "backImage": "/garments/trousers.svg",
+    "mask": "/garments/trousers.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 96,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 98,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 100,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 102,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 104,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 106,
+        "shoulder": 46
+      }
+    },
+    "rack": "I13",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Formal event",
+      "Travel"
+    ],
+    "silhouette": "bottom",
+    "featured": false
+  },
+  {
+    "id": "asm-09-04",
+    "sku": "ASM-0904",
+    "name": "Sand City Straight Trousers",
+    "brand": "NOVA COLLECTIVE",
+    "description": "City Straight Trousers with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Trousers",
+    "gender": "Unisex",
+    "price": 3399,
+    "discount": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Sand",
+        "hex": "#d4c1a1"
+      },
+      {
+        "name": "Black",
+        "hex": "#22232b"
+      },
+      {
+        "name": "Charcoal",
+        "hex": "#535660"
+      }
+    ],
+    "stock": 19,
+    "image": "/garments/trousers.svg",
+    "garmentImage": "/garments/trousers.svg",
+    "frontImage": "/garments/trousers.svg",
+    "backImage": "/garments/trousers.svg",
+    "mask": "/garments/trousers.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 96,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 98,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 100,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 102,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 104,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 106,
+        "shoulder": 46
+      }
+    },
+    "rack": "I14",
+    "floor": 1,
+    "section": "Unisex Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Office",
+      "Interview",
+      "Formal event",
+      "Travel"
+    ],
+    "silhouette": "bottom",
+    "featured": false
+  },
+  {
+    "id": "asm-10-01",
+    "sku": "ASM-1001",
+    "name": "Emerald Heritage Kurta Set",
+    "brand": "ATELIER",
+    "description": "Heritage Kurta Set with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Traditional wear",
+    "gender": "Men",
+    "price": 3999,
+    "discount": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Emerald",
+        "hex": "#346f59"
+      },
+      {
+        "name": "Navy",
+        "hex": "#283b57"
+      },
+      {
+        "name": "Olive",
+        "hex": "#718267"
+      }
+    ],
+    "stock": 17,
+    "image": "/garments/traditional-wear.svg",
+    "garmentImage": "/garments/traditional-wear.svg",
+    "frontImage": "/garments/traditional-wear.svg",
+    "backImage": "/garments/traditional-wear.svg",
+    "mask": "/garments/traditional-wear.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "J11",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Wedding",
+      "Festival",
+      "Formal event"
+    ],
+    "silhouette": "dress",
+    "featured": true
+  },
+  {
+    "id": "asm-10-02",
+    "sku": "ASM-1002",
+    "name": "Indigo Classic Celebration Kurta",
+    "brand": "FORM STUDIO",
+    "description": "Classic Celebration Kurta with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Traditional wear",
+    "gender": "Men",
+    "price": 4199,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      },
+      {
+        "name": "White",
+        "hex": "#f3efe5"
+      },
+      {
+        "name": "Beige",
+        "hex": "#c9b89e"
+      }
+    ],
+    "stock": 18,
+    "image": "/garments/traditional-wear.svg",
+    "garmentImage": "/garments/traditional-wear.svg",
+    "frontImage": "/garments/traditional-wear.svg",
+    "backImage": "/garments/traditional-wear.svg",
+    "mask": "/garments/traditional-wear.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "J12",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Wedding",
+      "Festival",
+      "Formal event"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  },
+  {
+    "id": "asm-10-03",
+    "sku": "ASM-1003",
+    "name": "Sand Textured Festive Kurta",
+    "brand": "URBAN THREAD",
+    "description": "Textured Festive Kurta with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Traditional wear",
+    "gender": "Men",
+    "price": 4399,
+    "discount": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Sand",
+        "hex": "#d4c1a1"
+      },
+      {
+        "name": "Black",
+        "hex": "#22232b"
+      },
+      {
+        "name": "Charcoal",
+        "hex": "#535660"
+      }
+    ],
+    "stock": 19,
+    "image": "/garments/traditional-wear.svg",
+    "garmentImage": "/garments/traditional-wear.svg",
+    "frontImage": "/garments/traditional-wear.svg",
+    "backImage": "/garments/traditional-wear.svg",
+    "mask": "/garments/traditional-wear.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "J13",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Wedding",
+      "Festival",
+      "Formal event"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  },
+  {
+    "id": "asm-10-04",
+    "sku": "ASM-1004",
+    "name": "Navy Silk Blend Occasion Set",
+    "brand": "NOVA COLLECTIVE",
+    "description": "Silk Blend Occasion Set with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Traditional wear",
+    "gender": "Men",
+    "price": 4599,
+    "discount": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Navy",
+        "hex": "#283b57"
+      },
+      {
+        "name": "Olive",
+        "hex": "#718267"
+      },
+      {
+        "name": "Maroon",
+        "hex": "#843d54"
+      }
+    ],
+    "stock": 20,
+    "image": "/garments/traditional-wear.svg",
+    "garmentImage": "/garments/traditional-wear.svg",
+    "frontImage": "/garments/traditional-wear.svg",
+    "backImage": "/garments/traditional-wear.svg",
+    "mask": "/garments/traditional-wear.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "J14",
+    "floor": 1,
+    "section": "Men Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Wedding",
+      "Festival",
+      "Formal event"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  },
+  {
+    "id": "asm-11-01",
+    "sku": "ASM-1101",
+    "name": "Indigo Festive Anarkali Set",
+    "brand": "ATELIER",
+    "description": "Festive Anarkali Set with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Ethnic wear",
+    "gender": "Women",
+    "price": 4499,
+    "discount": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Indigo",
+        "hex": "#455a82"
+      },
+      {
+        "name": "White",
+        "hex": "#f3efe5"
+      },
+      {
+        "name": "Beige",
+        "hex": "#c9b89e"
+      }
+    ],
+    "stock": 18,
+    "image": "/garments/ethnic-wear.svg",
+    "garmentImage": "/garments/ethnic-wear.svg",
+    "frontImage": "/garments/ethnic-wear.svg",
+    "backImage": "/garments/ethnic-wear.svg",
+    "mask": "/garments/ethnic-wear.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "K11",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Wedding",
+      "Festival",
+      "Party"
+    ],
+    "silhouette": "dress",
+    "featured": true
+  },
+  {
+    "id": "asm-11-02",
+    "sku": "ASM-1102",
+    "name": "Sand Contemporary Ethnic Set",
+    "brand": "FORM STUDIO",
+    "description": "Contemporary Ethnic Set with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Ethnic wear",
+    "gender": "Women",
+    "price": 4699,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Sand",
+        "hex": "#d4c1a1"
+      },
+      {
+        "name": "Black",
+        "hex": "#22232b"
+      },
+      {
+        "name": "Charcoal",
+        "hex": "#535660"
+      }
+    ],
+    "stock": 19,
+    "image": "/garments/ethnic-wear.svg",
+    "garmentImage": "/garments/ethnic-wear.svg",
+    "frontImage": "/garments/ethnic-wear.svg",
+    "backImage": "/garments/ethnic-wear.svg",
+    "mask": "/garments/ethnic-wear.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "K12",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Wedding",
+      "Festival",
+      "Party"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  },
+  {
+    "id": "asm-11-03",
+    "sku": "ASM-1103",
+    "name": "Navy Embroidered Celebration Set",
+    "brand": "URBAN THREAD",
+    "description": "Embroidered Celebration Set with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Ethnic wear",
+    "gender": "Women",
+    "price": 4899,
+    "discount": 15,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Navy",
+        "hex": "#283b57"
+      },
+      {
+        "name": "Olive",
+        "hex": "#718267"
+      },
+      {
+        "name": "Maroon",
+        "hex": "#843d54"
+      }
+    ],
+    "stock": 20,
+    "image": "/garments/ethnic-wear.svg",
+    "garmentImage": "/garments/ethnic-wear.svg",
+    "frontImage": "/garments/ethnic-wear.svg",
+    "backImage": "/garments/ethnic-wear.svg",
+    "mask": "/garments/ethnic-wear.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "K13",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Wedding",
+      "Festival",
+      "Party"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  },
+  {
+    "id": "asm-11-04",
+    "sku": "ASM-1104",
+    "name": "White Flowing Occasion Set",
+    "brand": "NOVA COLLECTIVE",
+    "description": "Flowing Occasion Set with a relaxed, balanced silhouette, soft hand feel and considered retail detailing. Demo garment; check the official size chart before purchase.",
+    "category": "Ethnic wear",
+    "gender": "Women",
+    "price": 5099,
+    "discount": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#f3efe5"
+      },
+      {
+        "name": "Beige",
+        "hex": "#c9b89e"
+      },
+      {
+        "name": "Rose",
+        "hex": "#c87b8b"
+      }
+    ],
+    "stock": 21,
+    "image": "/garments/ethnic-wear.svg",
+    "garmentImage": "/garments/ethnic-wear.svg",
+    "frontImage": "/garments/ethnic-wear.svg",
+    "backImage": "/garments/ethnic-wear.svg",
+    "mask": "/garments/ethnic-wear.svg",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 100,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 102,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 104,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 106,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 108,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 110,
+        "shoulder": 46
+      }
+    },
+    "rack": "K14",
+    "floor": 2,
+    "section": "Women Fashion",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Wedding",
+      "Festival",
+      "Party"
+    ],
+    "silhouette": "dress",
+    "featured": false
+  }
+]

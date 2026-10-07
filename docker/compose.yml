@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/backend.Dockerfile
+    environment:
+      ADMIN_TOKEN: ${ADMIN_TOKEN:?Set a private admin token}
+      ALLOW_DEMO_ADMIN: "false"
+      DATABASE_PATH: /data/mirror.sqlite3
+      FRONTEND_URL: ${FRONTEND_URL:-http://localhost:3000}
+      PUBLIC_ASSET_URL: /api/garment-assets
+    volumes:
+      - mirror-data:/data
+  frontend:
+    build:
+      context: ..
+      dockerfile: docker/frontend.Dockerfile
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      INTERNAL_API_URL: http://backend:8000
+volumes:
+  mirror-data:

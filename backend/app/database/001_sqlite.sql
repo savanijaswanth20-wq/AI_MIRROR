@@ -1,0 +1,89 @@
+-- Local initial migration. JSON schemas are enforced by the API.
+CREATE TABLE IF NOT EXISTS users (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS customers (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS products (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS categories (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS product_images (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS product_variants (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS sizes (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS colors (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS inventory (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS stores (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS store_locations (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS mirror_stations (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS try_on_sessions (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS try_on_products (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS recommendations (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS staff_requests (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS carts (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS cart_items (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS orders (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS analytics_events (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS qr_transfers (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS settings (
+  id TEXT PRIMARY KEY, payload TEXT NOT NULL CHECK(json_valid(payload)),
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

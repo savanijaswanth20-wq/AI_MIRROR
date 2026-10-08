@@ -33,6 +33,10 @@ Choose a piece, switch colors and size, then compare or save looks. Add pieces t
 
 Choose **Live camera** for pose, face and segmentation tracking. Allow camera permission, keep shoulders and hips visible, and step back for lower-body items. **Calibrate** accepts your height for approximate measurements. **Tracking details** shows body landmarks. Bundled model files avoid a CDN dependency. Camera pixels are never uploaded.
 
+Choose **Browse photo garments** for the real-photo samples, then **Start camera**. **Photo fit** adjusts width, length and vertical placement. The photograph follows your body; it remains an approximate 2D preview. The two photographic samples have demo pricing and size charts, with [source credits](docs/garment-photo-sources.md).
+
+To add your own clothing, open **Store dashboard → Products → Edit/Add product → Real garment photo**. Upload a front-facing PNG, JPEG or WebP of the garment against a plain contrasting background. Inspect the cutout, adjust background sensitivity, then **Apply photo to overlay** and **Save product**. Only the prepared garment PNG is uploaded; camera frames remain private. Existing transparent PNGs work directly, and original photo colors are preserved.
+
 ## Checks
 
 ```powershell
@@ -51,7 +55,7 @@ The Ruff WebAssembly wrapper is provided because native Ruff execution is blocke
 
 ## Store and deployment
 
-There are 44 seeded products, with catalogue metadata, sizes, colors, charts, location, stock and original transparent SVG assets. The dashboard supports products, categories, inventory, orders, anonymous sessions, mirror stations, staff requests, analytics and settings.
+There are 46 seeded products, including two photographic samples, with catalogue metadata, sizes, colors, charts, location and stock. Existing installations receive the photo samples once while retaining edited inventory and products. The dashboard supports products, categories, inventory, orders, anonymous sessions, mirror stations, staff requests, analytics and settings.
 
 SQLite is the default store. `.env.example` files document Supabase, authentication, storage and hosting configuration. The Supabase migrations and storage adapter are prepared; the user chose to skip cloud setup, so **Supabase, Vercel and Railway have not been configured or deployed**. Docker recipes are under `docker/`.
 

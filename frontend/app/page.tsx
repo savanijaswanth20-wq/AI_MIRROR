@@ -11,13 +11,14 @@ import type { BodyProfile, CartItem, Look, Product, Size } from '@/lib/types';
 import { api, beginSession, json, loadCatalogue, requestStaff, sendEvent, transfer } from '@/services/api';
 import seed from '../../shared/catalog.json';
 import { GarmentImage } from '@/components/GarmentImage';
+import { isPhotoGarment } from '@/features/try-on/garmentTexture';
 const money = (n:number) => `₹${Math.round(n).toLocaleString('en-IN')}`;
 const price = (p:Product) => p.price*(1-p.discount/100);
 type Panel = 'cart'|'compare'|'saved'|'qr'|'assistant'|'privacy'|null;
 export default function MirrorPage() {
  const initialSession=useRef<Promise<{id:string;online:boolean}>|null>(null);
  const sessionStaffIds=useRef<Set<string>>(new Set());
- const [products,setProducts]=useState<Product[]>(getProducts);
+ const [products,setProducts]=useState<Product[]>(seed as Product[]);
  const [selectedId,setSelectedId]=useState('');
  const [color,setColor]=useState('');
  const [size,setSize]=useState<Size>('M');
@@ -26,6 +27,7 @@ export default function MirrorPage() {
  const [gender,setGender]=useState('All collections');
  const [search,setSearch]=useState('');
  const [sort,setSort]=useState('Curated');
+ const [photosOnly,setPhotosOnly]=useState(false);
  const [mode,setMode]=useState<'demo'|'camera'>('demo');
  const [profile,setProfile]=useState<BodyProfile>(DEMO_PROFILE);
  const [active,setActive]=useState(true);
@@ -51,6 +53,7 @@ export default function MirrorPage() {
  const record=useCallback((type:string,metadata:Partial<{productId:string;color:string;size:string}>={})=>{if(!session)return;const event=track(type,session,metadata);if(online)void sendEvent(event).catch(()=>{});},[session,online]);
  useEffect(()=>{
   clearSession();setCart([]);setLooks([]);
+  setProducts(getProducts());
   const unsubscribe=subscribe(()=>{setProducts(getProducts());setCart(getCart());setLooks(getLooks());});
   let live=true;
   void loadCatalogue().then(p=>{if(live){saveProducts(p);setOnline(true);}}).catch(()=>{});
@@ -66,9 +69,9 @@ export default function MirrorPage() {
   return()=>clearTimeout(timeout);
  },[session,online,notify]);
  const filtered=useMemo(()=>{
-  const p=products.filter(p=>(category==='All'||p.category===category)&&(gender==='All collections'||p.gender===gender||p.gender==='Unisex')&&`${p.name} ${p.brand}`.toLowerCase().includes(search.toLowerCase()));
+  const p=products.filter(p=>(!photosOnly||isPhotoGarment(p.garmentImage))&&(category==='All'||p.category===category)&&(gender==='All collections'||p.gender===gender||p.gender==='Unisex')&&`${p.name} ${p.brand}`.toLowerCase().includes(search.toLowerCase()));
   return sort==='Price: low to high'?p.sort((a,b)=>price(a)-price(b)):sort==='Best style match'?p.sort((a,b)=>scoreProduct(b,b.colors[0].name,occasion,profile).overall-scoreProduct(a,a.colors[0].name,occasion,profile).overall):p;
- },[products,category,gender,search,sort,occasion,profile]);
+ },[products,category,gender,search,sort,occasion,profile,photosOnly]);
  const choose=(product:Product)=>{if(!active){notify('Start an experience to try a look.');return;}setSelectedId(product.id);setColor(product.colors[0].name);setSize(product.sizes.includes('M')?'M':product.sizes[0]);record('try_on',{productId:product.id,color:product.colors[0].name});};
  const step=(direction:number)=>{const index=filtered.findIndex(p=>p.id===selected.id);if(filtered.length)choose(filtered[(index+direction+filtered.length)%filtered.length]);};
  const addCart=async()=>{
@@ -136,9 +139,10 @@ export default function MirrorPage() {
     <section className="catalog-section">
      <div className="section-heading"><div><span className="number-tag">02</span><h2>Discover your next look</h2></div><span className="item-count">{products.length} pieces, picked for you</span></div>
      <div className="catalog-tools"><div className="search-box"><Search size={17}/><input aria-label="Search collection" placeholder="Find your favorite piece..." value={search} onChange={e=>setSearch(e.target.value)}/></div><label className="collection-select"><select aria-label="Collection" value={gender} onChange={e=>setGender(e.target.value)}>{['All collections','Men','Women','Unisex'].map(g=><option key={g}>{g}</option>)}</select><ChevronDown size={14}/></label></div>
-     <div className="category-row">{['All','Shirts','T-shirts','Blazers','Dresses','Jackets','Hoodies','Kurtis','Jeans','Trousers','Traditional wear','Ethnic wear'].map(c=><button key={c} className={category===c?'selected':''} onClick={()=>setCategory(c)}>{c}</button>)}</div>
+     <div className="category-row">{['All','Shirts','T-shirts','Sweaters','Blazers','Dresses','Jackets','Hoodies','Kurtis','Jeans','Trousers','Traditional wear','Ethnic wear'].map(c=><button key={c} className={category===c?'selected':''} onClick={()=>setCategory(c)}>{c}</button>)}</div>
+     <div className="photo-collection"><div><CameraPhotoIcon/><span><strong>Real garment photos</strong><small>Original fabric and color, fitted to your movement.</small></span></div><button aria-pressed={photosOnly} onClick={()=>{const next=!photosOnly;setPhotosOnly(next);setCategory('All');setGender('All collections');setSearch('');if(next){const photo=products.find(p=>isPhotoGarment(p.garmentImage));if(photo)choose(photo);}}}>{photosOnly?'Show all styles':'Browse photo garments'} <ArrowRight size={13}/></button></div>
      <div className="catalog-meta"><span>{filtered.length} styles to explore</span><label><SlidersHorizontal size={12}/><select aria-label="Sort collection" value={sort} onChange={e=>setSort(e.target.value)}>{['Curated','Price: low to high','Best style match'].map(s=><option key={s}>{s}</option>)}</select><ChevronDown size={12}/></label></div>
-     <div className="product-grid">{filtered.map((p,index)=><motion.button initial={{opacity:0,y:8}} animate={{opacity:1,y:0}} transition={{delay:Math.min(index,5)*0.025}} key={p.id} className={`product-card ${p.id===selected.id?'chosen':''}`} onClick={()=>choose(p)} aria-label={`Try ${p.name}`}><div className={`product-image bg-${index%4}`}><GarmentImage product={p} color={p.id===selected.id?selectedColor.hex:undefined} alt={p.name} loading="lazy"/>{p.id===selected.id?<span className="product-try"><Check size={12}/> TRYING ON</span>:p.featured&&<span className="product-tag">THE EDIT</span>}<span className="product-arrow"><ArrowUpRightIcon/></span></div><div className="product-details"><span className="product-brand">{p.brand} <span>{p.category}</span></span><h3>{p.name}</h3><div className="product-price"><strong>{money(price(p))}</strong>{p.discount>0&&<del>{money(p.price)}</del>}<div className="mini-swatches">{p.colors.slice(0,4).map(c=><i key={c.name} style={{background:c.hex}}/>)}</div></div></div></motion.button>)}{!filtered.length&&<div className="empty-state"><Search size={25}/><h3>No pieces found</h3><p>Try another category or search term.</p><button onClick={()=>{setSearch('');setCategory('All');setGender('All collections');}}>Show all pieces</button></div>}</div>
+     <div className="product-grid">{filtered.map((p,index)=><motion.button initial={{opacity:0,y:8}} animate={{opacity:1,y:0}} transition={{delay:Math.min(index,5)*0.025}} key={p.id} className={`product-card ${p.id===selected.id?'chosen':''}`} onClick={()=>choose(p)} aria-label={`Try ${p.name}`}><div className={`product-image bg-${index%4}`}><GarmentImage product={p} color={p.id===selected.id?selectedColor.hex:undefined} alt={p.name} loading="lazy"/>{p.id===selected.id?<span className="product-try"><Check size={12}/> TRYING ON</span>:isPhotoGarment(p.garmentImage)?<span className="product-tag">GARMENT PHOTO</span>:p.featured&&<span className="product-tag">THE EDIT</span>}<span className="product-arrow"><ArrowUpRightIcon/></span></div><div className="product-details"><span className="product-brand">{p.brand} <span>{p.category}</span></span><h3>{p.name}</h3><div className="product-price"><strong>{money(price(p))}</strong>{p.discount>0&&<del>{money(p.price)}</del>}<div className="mini-swatches">{p.colors.slice(0,4).map(c=><i key={c.name} style={{background:c.hex}}/>)}</div></div></div></motion.button>)}{!filtered.length&&<div className="empty-state"><Search size={25}/><h3>No pieces found</h3><p>Try another category or search term.</p><button onClick={()=>{setSearch('');setCategory('All');setGender('All collections');setPhotosOnly(false);}}>Show all pieces</button></div>}</div>
     </section>
    </div>
    <section className="selection-strip"><div className="strip-product"><span className="tiny-thumb"><GarmentImage product={selected} color={selectedColor.hex}/></span><div><span>YOUR CURRENT LOOK</span><strong>{selected.name}</strong><small><i className="status-dot"/>{selected.stock>0?'In stock':'Unavailable'} · Rack {selected.rack} · {selected.section}</small></div></div><div className="variant-control"><span>COLOR <b>{selectedColor.name}</b></span><div className="swatches">{selected.colors.map(c=><button key={c.name} title={c.name} aria-label={`Choose ${c.name}`} aria-pressed={selectedColor.name===c.name} style={{background:c.hex}} className={selectedColor.name===c.name?'active':''} onClick={()=>setColor(c.name)}/>)}</div></div><div className="variant-control"><span>SIZE <b>{score.sizeConfidence>50?`Suggested ${score.recommendedSize}`:'Choose your fit'}</b></span><div className="sizes">{selected.sizes.map(s=><button key={s} className={size===s?'active':''} onClick={()=>setSize(s)}>{s}</button>)}</div></div><div className="selection-actions"><strong>{money(price(selected))}</strong><button className="primary-button" disabled={selected.stock<1||!active} onClick={()=>void addCart()}><ShoppingBag size={17}/> Add to bag <Plus size={16}/></button></div></section>
@@ -146,7 +150,7 @@ export default function MirrorPage() {
    <div className="below-actions"><p><Leaf size={15}/> Less trying. More discovering. <span>Measurements are camera-based estimates.</span></p><div><button className="secondary-button" onClick={()=>step(-1)} aria-label="Previous product"><ChevronLeft size={16}/></button><button className="secondary-button" onClick={()=>step(1)}>Next look <ChevronRight size={16}/></button><button className="secondary-button" onClick={compare}><Columns2 size={16}/> Compare looks</button><button className="secondary-button" onClick={save}><Heart size={16}/> Save look</button><button className="secondary-button" onClick={()=>void callStaff()}><UserRound size={16}/> Call staff</button><button className="secondary-button" onClick={()=>void createQR()}><QrCode size={16}/> Take it with you</button></div></div>
    <div className="recommendation-edit"><div><span className="eyebrow">THE {occasion.toUpperCase()} EDIT</span><h2>A few more possibilities.</h2></div><div className="suggestion-row">{suggestions.filter(p=>p.id!==selected.id).slice(0,3).map(p=><button key={p.id} onClick={()=>choose(p)}><GarmentImage product={p}/><span><small>{p.category}</small><strong>{p.name}</strong><b>{money(price(p))}</b></span><ArrowRight size={19}/></button>)}</div></div>
   </main>
-  <footer className="site-footer"><span>AI SMART MIRROR <i>SEE IT. STYLE IT. WEAR IT.</i></span><span>Thoughtful technology. Personal style. <button onClick={()=>setPanel('privacy')}>Privacy</button></span></footer>
+  <footer className="site-footer"><span>AI SMART MIRROR <i>SEE IT. STYLE IT. WEAR IT.</i></span><span>Thoughtful technology. Personal style. <button onClick={()=>setPanel('privacy')}>Privacy</button> <a href="/garments/photos/credits.txt">Photo credits</a></span></footer>
   <button className="assistant-float" onClick={()=>setPanel('assistant')}><Sparkles size={18}/> Your style assistant <MessageCircle size={17}/></button>
   <AnimatePresence>{toast&&<motion.div role="status" className="toast" initial={{opacity:0,y:15}} animate={{opacity:1,y:0}} exit={{opacity:0,y:10}}><Check size={17}/>{toast}<button aria-label="Dismiss notification" onClick={()=>setToast('')}><X size={14}/></button></motion.div>}</AnimatePresence>
   <AnimatePresence>{panel&&<><motion.div className="modal-backdrop" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setPanel(null)}/><motion.aside role="dialog" aria-modal="true" aria-label={`${panel} panel`} className={`drawer ${panel==='compare'?'drawer-wide':''}`} initial={{x:50,opacity:0}} animate={{x:0,opacity:1}} exit={{x:50,opacity:0}}><div className="drawer-header"><span className="eyebrow">YOUR PERSONAL FITTING ROOM</span><button aria-label="Close panel" className="icon-btn" onClick={()=>setPanel(null)}><X/></button></div>
@@ -158,5 +162,6 @@ export default function MirrorPage() {
   </motion.aside></>}</AnimatePresence>
  </div>;
 }
+function CameraPhotoIcon(){return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M4 6h4l2-3h4l2 3h4v15H4z"/><circle cx="12" cy="13" r="4"/></svg>;}
 function ArrowUpRightIcon(){return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 18 18 6M6 6h12v12"/></svg>;}
 function Empty({icon,title,text}:{icon:React.ReactNode;title:string;text:string}){return <div className="empty-state">{icon}<h3>{title}</h3><p>{text}</p></div>;}

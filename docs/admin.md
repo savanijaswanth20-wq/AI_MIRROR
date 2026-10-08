@@ -29,6 +29,8 @@ Offline product and staff edits live in this browser; they are not an automatic 
 
 ## Garment asset handling
 
+The **Real garment photo** studio locally prepares a front-facing garment photograph or existing transparent PNG. It previews the original and cutout, provides background sensitivity and reset controls, and preserves photographed colors. Use a plain contrasting backdrop: uneven backgrounds and same-color fabric cannot be reliably removed by the local color-based algorithm. Select **Apply photo to overlay**, then **Save product**. The catalogue/front image changes only when the explicit checkbox is enabled. Only the prepared PNG is uploaded, with no camera frames or customer photos involved. Source photos may be up to 12 MB; normalized exports still obey the 2 MB asset limit.
+
 Uploads accept PNG, SVG, JPEG and WebP, limited to 2 MB. SVG uploads are parsed and reject scripts, active content, embedded images, styles, animation, entity declarations and external references. Connected SVG uploads are rasterized locally to a transparent PNG before posting raw bytes to `/api/admin/assets`. The backend validates uploaded files independently.
 
 Default local backend asset URLs are displayed through the same-origin `/api/garment-assets/{file}` proxy, allowing a reachable frontend to serve assets to other devices. When the local backend is unavailable, validated assets remain as local data URLs. No uploaded SVG is inserted into HTML.
@@ -43,4 +45,4 @@ Default local backend asset URLs are displayed through the same-origin `/api/gar
 
 ## Validation
 
-The admin source passes TypeScript strict checking and targeted ESLint. Browser verification confirmed the connected dashboard, all 44 seeded catalogue products, the complete product editor, and a successful unchanged product update through the local protected API bridge.
+The admin source passes TypeScript strict checking and ESLint. Earlier MVP browser verification confirmed the connected dashboard, its original 44 catalogue products, the complete product editor, and an unchanged product update through the local protected API bridge. The photo preparation helper has eight automated tests. See [verification.md](verification.md) for the 46-product photo update checks and the remaining upload walkthrough limitation.

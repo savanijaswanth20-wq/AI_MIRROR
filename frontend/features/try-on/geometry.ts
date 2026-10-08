@@ -1,4 +1,5 @@
 import type { Landmark } from '@/lib/types';
+import type { GarmentAlignment } from './VirtualTryOnEngine';
 
 export interface Point { x: number; y: number }
 export interface GarmentFrame { rows: { left: Point; right: Point }[]; confidence: number }
@@ -9,7 +10,7 @@ const mix = (a: Point, b: Point, t: number): Point => ({ x: lerp(a.x,b.x,t), y: 
 const midpoint = (a: Point, b: Point) => mix(a,b,.5);
 
 /** Image-space proportions only: a camera has no physical scale without calibration. */
-export function createGarmentFrame(landmarks: Landmark[], width: number, height: number, silhouette: 'top'|'bottom'|'dress'): GarmentFrame | null {
+export function createGarmentFrame(landmarks: Landmark[], width: number, height: number, silhouette: 'top'|'bottom'|'dress', photograph = false): GarmentFrame | null {
   if (landmarks.length < 33 || !Number.isFinite(width) || !Number.isFinite(height) || width <= 0 || height <= 0) return null;
   const needed = silhouette === 'bottom' ? [23,24,27,28] : silhouette === 'dress' ? [11,12,23,24,27,28] : [11,12,23,24];
   if (needed.some(i => !Number.isFinite(landmarks[i].x) || !Number.isFinite(landmarks[i].y) || (landmarks[i].visibility ?? 1) < .45)) return null;
@@ -29,19 +30,40 @@ export function createGarmentFrame(landmarks: Landmark[], width: number, height:
     let center: Point, span: number;
     if (silhouette==='bottom') {
       const footMid=midpoint(ankles[0],ankles[1]);
-      center=mix(hipMid,footMid,lerp(-.08,1.04,t));
+      center=mix(hipMid,footMid,lerp(photograph?-.02:-.08,photograph?1:1.04,t));
       span=lerp(hipWidth*1.8,Math.max(hipWidth*1.5,distance(ankles[0],ankles[1])*1.4),t);
     } else if (silhouette==='dress') {
       const footMid=midpoint(ankles[0],ankles[1]);
-      center=mix(shoulderMid,footMid,lerp(-.13,1.02,t));
+      center=mix(shoulderMid,footMid,lerp(photograph?-.05:-.13,photograph?1:1.02,t));
       span=t<.4 ? lerp(shoulderWidth*1.9,hipWidth*1.9,t/.4) : lerp(hipWidth*1.9,hipWidth*2.9,(t-.4)/.6);
     } else {
-      center=mix(shoulderMid,hipMid,lerp(-.27,1.23,t));
+      center=mix(shoulderMid,hipMid,lerp(photograph?-.19:-.27,photograph?1.12:1.23,t));
       span=lerp(shoulderWidth*1.82,Math.max(hipWidth*1.9,shoulderWidth*1.5),t);
     }
     rows.push({left:{x:center.x-axis.x*span/2,y:center.y-axis.y*span/2},right:{x:center.x+axis.x*span/2,y:center.y+axis.y*span/2}});
   }
   return {rows,confidence:Math.min(...needed.map(i=>landmarks[i].visibility??1))};
+}
+
+/** Scale from the collar/waist so changing length does not pull the neckline away. */
+export function alignGarmentFrame(frame: GarmentFrame, landmarks: Landmark[], width: number, height: number, alignment?: GarmentAlignment): GarmentFrame {
+  if (!alignment) return frame;
+  const clamp = (value: number, fallback: number, min: number, max: number) => Number.isFinite(value) ? Math.max(min, Math.min(max, value)) : fallback;
+  const scaleX = clamp(alignment.scaleX, 1, .65, 1.45), scaleY = clamp(alignment.scaleY, 1, .65, 1.45);
+  const offsetX = clamp(alignment.offsetX, 0, -.3, .3), offsetY = clamp(alignment.offsetY, 0, -.3, .3);
+  const a = {x: landmarks[11].x * width, y: landmarks[11].y * height}, b = {x: landmarks[12].x * width, y: landmarks[12].y * height};
+  const shoulder = midpoint(a, b), hip = {x: (landmarks[23].x + landmarks[24].x) * width / 2, y: (landmarks[23].y + landmarks[24].y) * height / 2};
+  const span = Math.max(1, distance(a, b)), torso = Math.max(1, distance(shoulder, hip));
+  const angle = Math.atan2(frame.rows[0].right.y - frame.rows[0].left.y, frame.rows[0].right.x - frame.rows[0].left.x);
+  const right = {x: Math.cos(angle), y: Math.sin(angle)}, down = {x: -Math.sin(angle), y: Math.cos(angle)};
+  const anchor = midpoint(frame.rows[0].left, frame.rows[0].right);
+  const transform = (point: Point): Point => {
+    const delta = {x: point.x - anchor.x, y: point.y - anchor.y};
+    const x = (delta.x * right.x + delta.y * right.y) * scaleX + offsetX * span;
+    const y = (delta.x * down.x + delta.y * down.y) * scaleY + offsetY * torso;
+    return {x: anchor.x + x * right.x + y * down.x, y: anchor.y + x * right.y + y * down.y};
+  };
+  return {confidence: frame.confidence, rows: frame.rows.map(row => ({left: transform(row.left), right: transform(row.right)}))};
 }
 
 /** Low-pass filtering is time-based, so 15 fps and 30 fps respond similarly. */

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Check, ImagePlus, LoaderCircle, X } from 'lucide-react';
 import type { Product, Size } from '@/lib/types';
+import GarmentPhotoStudio from '@/features/garments/garment-photo-studio';
 import { uploadGarmentAsset, SIZES } from './admin-model';
 
 interface Props { product: Product; onClose: () => void; onSave: (product: Product) => Promise<void> }
@@ -66,7 +67,7 @@ export default function ProductEditor({ product, onClose, onSave }: Props) {
           <label className="admin-field admin-span-2">Product name<input required maxLength={120} value={draft.name} onChange={event => setField('name', event.target.value)} placeholder="The Everyday Linen Shirt"/></label>
           <label className="admin-field">SKU<input required maxLength={50} value={draft.sku} onChange={event => setField('sku', event.target.value)} placeholder="ASM-SH-031"/></label>
           <label className="admin-field">Brand<input required maxLength={80} value={draft.brand} onChange={event => setField('brand', event.target.value)}/></label>
-          <label className="admin-field">Category<input required maxLength={60} value={draft.category} onChange={event => setField('category', event.target.value)} list="admin-category-list"/><datalist id="admin-category-list">{['T-shirts', 'Shirts', 'Hoodies', 'Jackets', 'Blazers', 'Dresses', 'Kurtis', 'Jeans', 'Trousers', 'Ethnic wear'].map(category => <option key={category}>{category}</option>)}</datalist></label>
+          <label className="admin-field">Category<input required maxLength={60} value={draft.category} onChange={event => setField('category', event.target.value)} list="admin-category-list"/><datalist id="admin-category-list">{['T-shirts', 'Shirts', 'Sweaters', 'Hoodies', 'Jackets', 'Blazers', 'Dresses', 'Kurtis', 'Jeans', 'Trousers', 'Ethnic wear'].map(category => <option key={category}>{category}</option>)}</datalist></label>
           <label className="admin-field">Collection<select value={draft.gender} onChange={event => setField('gender', event.target.value as Product['gender'])}><option>Men</option><option>Women</option><option>Unisex</option></select></label>
           <label className="admin-field">Price · INR<input required type="number" min={1} max={1000000} step="1" value={draft.price} onChange={event => setField('price', Number(event.target.value))}/></label>
           <label className="admin-field">Discount · %<input required type="number" min={0} max={90} step="1" value={draft.discount} onChange={event => setField('discount', Number(event.target.value))}/></label>
@@ -81,7 +82,8 @@ export default function ProductEditor({ product, onClose, onSave }: Props) {
           <label className="admin-field">Section<input required maxLength={100} value={draft.section} onChange={event => setField('section', event.target.value)}/></label>
           <label className="admin-field admin-span-2">Occasions<input value={occasions} onChange={event => setOccasions(event.target.value)} placeholder="Casual, Office, Travel"/></label>
           <label className="admin-field admin-span-2">Garment measurements · centimetres<textarea className="admin-code-field" rows={6} value={measurements} onChange={event => setMeasurements(event.target.value)} spellCheck={false}/><small>Example: {'{"M":{"chest":104,"length":72,"shoulder":46}}'}. Review the sample measurements and include every selected size.</small></label>
-          <div className="admin-span-2 admin-form-section"><span className="admin-eyebrow">GARMENT ASSETS</span><p>Use a transparent PNG or self-contained SVG for the overlay. Images are limited to 2 MB.</p></div>
+          <GarmentPhotoStudio silhouette={draft.silhouette} disabled={busy} onBusyChange={setBusy} onApply={(url, updateCatalogue) => setDraft(previous => ({ ...previous, garmentImage: url, ...(updateCatalogue ? { image: url, frontImage: url } : {}) }))}/>
+          <div className="admin-span-2 admin-form-section"><span className="admin-eyebrow">GARMENT ASSETS</span><p>Prepared photo overlays appear here. You can also use a transparent PNG or self-contained SVG directly. Uploaded assets are limited to 2 MB.</p></div>
           {imageFields.map(field => <label className="admin-field admin-span-2" key={field.key}>{field.label}<div className="admin-asset-control"><input value={draft[field.key]} onChange={event => setField(field.key, event.target.value)} placeholder="/assets/garments/shirt.svg or https://…"/><label className="admin-upload"><ImagePlus size={17}/><span>Upload</span><input type="file" accept="image/png,image/svg+xml,image/jpeg,image/webp" onChange={async event => {
             const file = event.target.files?.[0];
             if (!file) return;

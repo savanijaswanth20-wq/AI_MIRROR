@@ -3634,5 +3634,153 @@
     ],
     "silhouette": "dress",
     "featured": false
+  },
+  {
+    "id": "asm-photo-tee",
+    "sku": "ASM-PHOTO-TEE",
+    "name": "Blue Cotton Tee · Photo",
+    "brand": "PHOTO SAMPLE",
+    "description": "Photograph-derived blue cotton T-shirt sample for the live preview. The sample cutout uses AI-assisted background cleanup; upload your own store garment photograph in the dashboard. Price, stock and size chart are demo data, not an offer for the pictured garment.",
+    "category": "T-shirts",
+    "gender": "Unisex",
+    "price": 899,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Blue",
+        "hex": "#657897"
+      }
+    ],
+    "stock": 8,
+    "image": "/garments/photos/cotton-tee-photo.png",
+    "garmentImage": "/garments/photos/cotton-tee-photo.png",
+    "frontImage": "/garments/photos/cotton-tee-photo.png",
+    "backImage": "/garments/photos/cotton-tee-photo.png",
+    "mask": "/garments/photos/cotton-tee-photo.png",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "PHOTO-01",
+    "floor": 1,
+    "section": "Sample garment photography",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel"
+    ],
+    "silhouette": "top",
+    "featured": true
+  },
+  {
+    "id": "asm-photo-sweater",
+    "sku": "ASM-PHOTO-KNIT",
+    "name": "Grey Ribbed Turtleneck · Photo",
+    "brand": "PHOTO SAMPLE",
+    "description": "Actual grey ribbed turtleneck photograph prepared as a transparent cutout. Fabric texture and photographed color remain visible while the overlay follows body landmarks. Price, stock and size chart are demo data, not an offer for the pictured garment.",
+    "category": "Sweaters",
+    "gender": "Unisex",
+    "price": 1499,
+    "discount": 0,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Grey",
+        "hex": "#928f7e"
+      }
+    ],
+    "stock": 8,
+    "image": "/garments/photos/grey-turtleneck-cutout.png",
+    "garmentImage": "/garments/photos/grey-turtleneck-cutout.png",
+    "frontImage": "/garments/photos/grey-turtleneck-cutout.png",
+    "backImage": "/garments/photos/grey-turtleneck-cutout.png",
+    "mask": "/garments/photos/grey-turtleneck-cutout.png",
+    "measurements": {
+      "XS": {
+        "chest": 88,
+        "length": 64,
+        "shoulder": 36
+      },
+      "S": {
+        "chest": 96,
+        "length": 66,
+        "shoulder": 38
+      },
+      "M": {
+        "chest": 104,
+        "length": 68,
+        "shoulder": 40
+      },
+      "L": {
+        "chest": 112,
+        "length": 70,
+        "shoulder": 42
+      },
+      "XL": {
+        "chest": 120,
+        "length": 72,
+        "shoulder": 44
+      },
+      "XXL": {
+        "chest": 128,
+        "length": 74,
+        "shoulder": 46
+      }
+    },
+    "rack": "PHOTO-02",
+    "floor": 1,
+    "section": "Sample garment photography",
+    "store": "Atelier Central · Bengaluru",
+    "occasions": [
+      "Casual",
+      "College",
+      "Travel"
+    ],
+    "silhouette": "top",
+    "featured": true
   }
 ]

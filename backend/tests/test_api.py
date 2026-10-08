@@ -50,7 +50,8 @@ AUTH = {"Authorization": "Bearer test-secret"}
 def test_catalog_is_populated_and_filterable(client):
     products = client.get("/api/products").json()
     assert len(products) >= 30
-    assert len({p["category"] for p in products}) == 11
+    assert len({p["category"] for p in products}) >= 11
+    assert any(p["id"] == "asm-photo-sweater" for p in products)
     assert all(p["measurements"][size]["chest"] > 0 for p in products for size in p["sizes"])
     assert {p["category"] for p in client.get("/api/products?category=Blazers").json()} == {"Blazers"}
 

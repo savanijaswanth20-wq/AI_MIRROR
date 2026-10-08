@@ -8,9 +8,9 @@ The MVP runs locally with Next.js on 127.0.0.1:3000 and FastAPI on 127.0.0.1:800
 | --- | --- |
 | Frontend ESLint | Passed, no warnings |
 | TypeScript strict check | Passed |
-| Frontend Vitest | 19 tests passed across geometry, recommendations, customer session isolation and analytics privacy |
+| Frontend Vitest | 39 tests passed across geometry, photo crop/alignment, local background preparation, motion prediction, recommendations, customer session isolation and analytics privacy |
 | Next.js production build | Passed; customer, admin, transfer and API proxy routes generated |
-| Backend pytest | 25 tests passed; one upstream Starlette TestClient deprecation warning |
+| Backend pytest | 26 tests passed; one upstream Starlette TestClient deprecation warning |
 | Backend Ruff WebAssembly | Passed, zero diagnostics |
 | Python compileall / pip check | Passed |
 | Production npm dependency audit | Zero reported vulnerabilities |
@@ -34,6 +34,8 @@ Verified with the Codex in-app browser:
 - Narrow mobile layout without horizontal page overflow.
 
 The saved [customer preview](preview.jpg) contains only an original illustrated mannequin, not a customer's photograph. A [dashboard preview](admin-preview.jpg) records the connected local store workspace.
+
+For the photo-clothing update, browser checks confirmed both photographic samples in the 46-product catalogue, the photo-only filter, the rendered sweater overlay on the demo mannequin, width adjustment to 130%, and reset to 100% when switching garments. No browser console errors were recorded in that walkthrough. Subsequent localhost browser access was declined, so the final admin photo upload/save walkthrough was not completed. Updated live-camera motion has automated prediction/dropout tests and source review, but has not been validated with a person on camera.
 
 ## Remaining boundaries
 

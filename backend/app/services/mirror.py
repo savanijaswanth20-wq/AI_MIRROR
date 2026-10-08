@@ -37,6 +37,7 @@ class MirrorService:
     def seed(self) -> None:
         with self.db.transaction():
             if self.db.get("settings", "catalog_seeded") is not None:
+                self.seed_photo_samples()
                 return
             products = json.loads(self.settings.catalog_path.read_text(encoding="utf-8"))
             for data in products:
@@ -67,6 +68,32 @@ class MirrorService:
                 {"id": "station-04", "name": "Station 04", "status": "online"},
             )
             self.db.put("settings", "catalog_seeded", {"id": "catalog_seeded", "at": iso()})
+            self.seed_photo_samples()
+
+    def seed_photo_samples(self) -> None:
+        """Add the new photo examples once, preserving edited stock and deleted products."""
+        marker = "photo_catalog_seeded_v1"
+        if self.db.get("settings", marker) is not None:
+            return
+        samples = [
+            data
+            for data in json.loads(self.settings.catalog_path.read_text(encoding="utf-8"))
+            if data["id"].startswith("asm-photo-")
+        ]
+        if not samples:
+            return
+        for data in samples:
+            if self.db.get("products", data["id"]) is None:
+                self.save_product(Product.model_validate(data))
+            if not any(item["name"] == data["category"] for item in self.db.list("categories")):
+                category_id = "photo-" + re.sub(r"[^a-z0-9]+", "-", data["category"].lower())
+                self.db.put(
+                    "categories", category_id, {"id": category_id, "name": data["category"]}
+                )
+            for color in data["colors"]:
+                if self.db.get("colors", color["name"]) is None:
+                    self.db.put("colors", color["name"], {"id": color["name"], **color})
+        self.db.put("settings", marker, {"id": marker, "at": iso()})
 
     def products(self) -> list[Product]:
         return [Product.model_validate(value) for value in self.db.list("products")]

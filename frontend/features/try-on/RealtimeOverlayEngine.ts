@@ -1,5 +1,6 @@
 import type { Landmark, Product } from '@/lib/types';
-import { createGarmentFrame, distance, POSE_CONNECTIONS, triangleTransform, type Point } from './geometry';
+import { alignGarmentFrame, createGarmentFrame, distance, POSE_CONNECTIONS, triangleTransform, type Point } from './geometry';
+import { alphaBounds, isPhotoGarment, type TextureBounds } from './garmentTexture';
 import type { TryOnFrame, VirtualTryOnEngine } from './VirtualTryOnEngine';
 
 export class RealtimeOverlayEngine implements VirtualTryOnEngine {
@@ -9,10 +10,16 @@ export class RealtimeOverlayEngine implements VirtualTryOnEngine {
   private revision=0;
   private layer: HTMLCanvasElement | null=null;
   private maskLayer: HTMLCanvasElement | null=null;
+  private bounds: TextureBounds | null=null;
+  private photograph=false;
+  private loadedKey='';
 
   async setGarment(product: Product,color: string) {
+    const key=`${product.garmentImage}:${isPhotoGarment(product.garmentImage)?'original':color}:${product.silhouette}`;
+    if(this.loadedKey===key&&this.image)return;
     const revision=++this.revision;
     this.image=null;
+    this.bounds=null;this.loadedKey='';
     const response=await fetch(product.garmentImage);
     if (!response.ok) throw new Error('Garment image unavailable. Select another item.');
     const chosen=product.colors.find(c=>c.name===color||c.hex===color)?.hex ?? product.colors[0]?.hex ?? '#596c57';
@@ -27,24 +34,30 @@ export class RealtimeOverlayEngine implements VirtualTryOnEngine {
       const image=new Image(); image.src=url; await image.decode();
       if (revision===this.revision) {
         // Rasterize while the object URL is alive; mesh drawing then uses a stable bitmap.
-        const texture=document.createElement('canvas');texture.width=image.naturalWidth||400;texture.height=image.naturalHeight||600;
+        const texture=document.createElement('canvas');
+        const naturalWidth=image.naturalWidth||400,naturalHeight=image.naturalHeight||600,scale=Math.min(1,1024/Math.max(naturalWidth,naturalHeight));
+        texture.width=Math.max(1,Math.round(naturalWidth*scale));texture.height=Math.max(1,Math.round(naturalHeight*scale));
         const context=texture.getContext('2d');if(!context)throw new Error('This browser cannot initialize the garment texture.');
         context.drawImage(image,0,0,texture.width,texture.height);
-        this.image=texture;this.silhouette=product.silhouette;
+        const photograph=!isSvg;
+        const bounds=photograph?alphaBounds(context.getImageData(0,0,texture.width,texture.height).data,texture.width,texture.height):{x:0,y:0,width:texture.width,height:texture.height};
+        if(!bounds)throw new Error('This garment image is empty. Upload a visible garment photo.');
+        this.image=texture;this.silhouette=product.silhouette;this.bounds=bounds;this.photograph=photograph;this.loadedKey=key;
       }
     } finally { URL.revokeObjectURL(url); }
   }
   render(context: CanvasRenderingContext2D,frame: TryOnFrame) {
     const {width,height,landmarks}=frame;
     context.clearRect(0,0,width,height);
-    const garment=createGarmentFrame(landmarks,width,height,this.silhouette);
-    if (!this.image || !garment) { if(frame.debug) this.drawDebug(context,landmarks,width,height); return; }
+    const base=createGarmentFrame(landmarks,width,height,this.silhouette,this.photograph);
+    const garment=base?alignGarmentFrame(base,landmarks,width,height,frame.alignment):null;
+    if (!this.image || !this.bounds || !garment) { if(frame.debug) this.drawDebug(context,landmarks,width,height); return; }
     this.layer ??= document.createElement('canvas');
     if(this.layer.width!==width||this.layer.height!==height) {this.layer.width=width;this.layer.height=height;}
     const layer=this.layer.getContext('2d'); if(!layer) return;
     layer.clearRect(0,0,width,height);
     const columns=4, rows=garment.rows.length-1;
-    const texturePoint=(col:number,row:number):Point=>({x:col/columns*this.image!.width,y:row/rows*this.image!.height});
+    const texturePoint=(col:number,row:number):Point=>({x:this.bounds!.x+col/columns*this.bounds!.width,y:this.bounds!.y+row/rows*this.bounds!.height});
     const bodyPoint=(col:number,row:number):Point=>({x:garment.rows[row].left.x+(garment.rows[row].right.x-garment.rows[row].left.x)*col/columns,y:garment.rows[row].left.y+(garment.rows[row].right.y-garment.rows[row].left.y)*col/columns});
     for(let row=0;row<rows;row++) for(let col=0;col<columns;col++) {
       this.drawTriangle(layer,[texturePoint(col,row),texturePoint(col+1,row),texturePoint(col+1,row+1)],[bodyPoint(col,row),bodyPoint(col+1,row),bodyPoint(col+1,row+1)]);
@@ -93,5 +106,5 @@ export class RealtimeOverlayEngine implements VirtualTryOnEngine {
     for(const p of points) if((p.visibility??1)>.4) {context.beginPath();context.arc(p.x*width,p.y*height,3,0,Math.PI*2);context.fill();}
     context.restore();
   }
-  dispose() {this.revision++;this.image=null;this.layer=null;this.maskLayer=null;}
+  dispose() {this.revision++;this.image=null;this.bounds=null;this.loadedKey='';this.layer=null;this.maskLayer=null;}
 }

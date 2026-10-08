@@ -2,11 +2,14 @@ import type { Landmark, Product } from '@/lib/types';
 
 export interface TryOnFrame {
   width: number; height: number; landmarks: Landmark[];
+  /** Preview adjustments, not physical measurements or a size recommendation. */
+  alignment?: GarmentAlignment;
   source?: CanvasImageSource;
   /** A locally generated pose segmentation canvas; never uploaded. */
   segmentation?: CanvasImageSource;
   debug?: boolean;
 }
+export interface GarmentAlignment { scaleX: number; scaleY: number; offsetX: number; offsetY: number }
 export interface VirtualTryOnEngine {
   readonly kind: 'realtime-overlay' | 'ai-vton';
   setGarment(product: Product, color: string): Promise<void>;

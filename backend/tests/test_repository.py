@@ -3,7 +3,9 @@ import json
 import httpx
 import pytest
 
+from app.core.config import Settings
 from app.database.repository import SQLiteRepository, SupabaseRepository
+from app.services.mirror import MirrorService
 
 
 def test_sqlite_transaction_rolls_back_related_writes(tmp_path):
@@ -15,6 +17,35 @@ def test_sqlite_transaction_rolls_back_related_writes(tmp_path):
         raise RuntimeError("Interrupted checkout")
     assert repository.get("products", "a")["stock"] == 5
     assert repository.get("orders", "order") is None
+    repository.close()
+
+
+def test_photo_seed_upgrade_preserves_store_edits_and_applies_once(tmp_path):
+    catalog = json.loads(Settings().catalog_path.read_text(encoding="utf-8"))
+    original = next(p for p in catalog if not p["id"].startswith("asm-photo-"))
+    path = tmp_path / "catalog.json"
+    path.write_text(json.dumps([original]), encoding="utf-8")
+    repository = SQLiteRepository(str(tmp_path / "upgrade.sqlite3"))
+    service = MirrorService(repository, Settings(catalog_path=path))
+    service.seed()
+    changed = {**original, "stock": 73}
+    repository.put("products", original["id"], changed)
+    photo = {
+        **original,
+        "id": "asm-photo-test",
+        "sku": "PHOTO-TEST",
+        "image": "/photo.png",
+        "category": "Sweaters",
+    }
+    path.write_text(json.dumps([original, photo]), encoding="utf-8")
+    service.seed()
+    assert repository.get("products", original["id"])["stock"] == 73
+    assert repository.get("products", photo["id"])["image"] == "/photo.png"
+    assert repository.get("product_images", photo["id"]) is not None
+    assert any(item["name"] == "Sweaters" for item in repository.list("categories"))
+    repository.delete("products", photo["id"])
+    service.seed()
+    assert repository.get("products", photo["id"]) is None
     repository.close()
 
 

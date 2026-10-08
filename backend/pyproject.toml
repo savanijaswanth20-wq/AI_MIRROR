@@ -1,3 +1,21 @@
+[project]
+name = "ai-smart-mirror-backend"
+version = "0.1.0"
+description = "AI Smart Mirror Backend API"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115,<1",
+    "uvicorn[standard]>=0.34,<1",
+    "httpx>=0.28,<1",
+    "pydantic>=2.10,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3,<10",
+    "ruff>=0.11,<1",
+]
+
 [tool.ruff]
 line-length = 110
 target-version = "py312"
@@ -11,3 +29,4 @@ known-first-party = ["app"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+

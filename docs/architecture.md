@@ -1,0 +1,15 @@
+# Architecture and verification boundaries
+
+The Next.js customer kiosk and separate admin workspace call FastAPI through a same-origin server proxy. The local launcher binds both servers to loopback and generates an admin bearer token in memory. An explicitly configured remote API instead requires an admin bearer token or a Supabase Auth session; privileged keys remain server-side.
+
+The shared catalogue seeds 44 products. SQLite persists inventory, staff requests, anonymous events, sessions, carts and short-lived transfers. Supabase REST repositories and SQL migrations are provided for optional cloud use. No Supabase project was connected or modified.
+
+Camera frames remain in the browser. Locally bundled MediaPipe Pose Landmarker returns 33 landmarks and a person segmentation mask; Face Landmarker supplies geometry for fashion-only appearance heuristics. requestAnimationFrame drives rendering and throttles inference to 20 fps. GPU execution falls back to CPU. Landmarks use time-based smoothing. The overlay engine warps transparent SVG garments with a triangle mesh and masks background pixels; crossing forearms are restored approximately. The frontend depends on a VirtualTryOnEngine interface. A future model adapter explicitly reports unavailable until a VTON provider is configured.
+
+Illustrated demo mode shares the same mesh renderer. Product shapes are original vector assets; they demonstrate placement, color switching and retail interactions rather than actual fabric behavior. A metric body estimate requires an entered height and an upright full-body view. Circumference and depth cannot be measured accurately from one camera. Style scoring and the fashion assistant are explainable catalogue rules, not a trained fashion model or an LLM.
+
+Save Look retains outfit metadata only in tab-scoped session storage. No screenshots are captured or stored. Ending a session clears customer cart/look state and invalidates backend transfers. Opening another mirror tab cannot clear the first tab's cart or saved looks. Browser analytics use independent anonymous identifiers rather than backend session access tokens; older local entries are sanitized on read. Backend expiry removes session data; anonymous events have a 30-day retention window. Staff calls create dashboard tasks and do not send an external message.
+
+For an external retail deployment, configure HTTPS, Supabase Auth and role assignment, database/storage credentials, reachable transfer URLs and persistent backend volumes. Disable demo admin. An additional calibration study, real garment assets, device benchmarking and more precise occlusion/human parsing are needed before claiming realistic fit or 20–30 fps on store hardware. Orders are demonstration records, with no payment integration.
+
+Runtime tests cover geometry transformations, uncertainty, inventory grounding, API validation, access control, TTL and cart transactions. Browser checks cover the customer and admin journeys. A real customer camera session still requires physical hardware and permission; demo tests do not validate real-person fit.

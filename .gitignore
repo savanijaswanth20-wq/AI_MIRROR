@@ -13,3 +13,4 @@ __pycache__/
 .npm-cache/
 playwright-report/
 test-results/
+frontend/next-env.d.ts

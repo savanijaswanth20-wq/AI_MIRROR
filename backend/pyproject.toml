@@ -30,3 +30,6 @@ known-first-party = ["app"]
 testpaths = ["tests"]
 pythonpath = ["."]
 
+[tool.vercel]
+entrypoint = "api/index.py:app"
+
